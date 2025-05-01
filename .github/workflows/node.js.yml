@@ -21,9 +21,9 @@ jobs:
         working-directory: angular
         run: npm install && npm run build:prod
 
-      # - name: Deploy to GitHub Pages
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: github-option-three-app/dist/browser
-      #     branch: prod  
-      #     token: ${{ secrets.GH_TOKEN }}
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: github-option-three-app/dist/browser
+          branch: prod  
+          token: ${{ secrets.GH_TOKEN }}
